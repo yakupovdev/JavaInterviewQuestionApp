@@ -1,11 +1,11 @@
 package com.github.yakupovdev.javainterviewapp.model;
 
 public class InterviewQuestion {
-    private int id;
+    private Integer id;
     private String question;
     private String answer;
 
-    public InterviewQuestion(int id, String question, String answer) {
+    public InterviewQuestion(Integer id, String question, String answer) {
         this.id = id;
         this.question = question;
         this.answer = answer;
