@@ -16,7 +16,7 @@ public class InterviewQuestionCli {
     private final String WELCOME = "======WELCOME TO JAVA INTERVIEW QUESTION======";
 
     private final String MENU = """
-            Write the command like in brackets:
+            \nWrite the command like in brackets:
             1. Add new interview question (add)
             2. Delete interview question by Id (delete)
             3. List of interview questions (list)
@@ -24,18 +24,18 @@ public class InterviewQuestionCli {
             """;
 
     private final String ADD_QUESTION_MENU = """
-            ======ADD QUESTION======
+            \n======ADD QUESTION======
             (to return, enter “menu”)
             """;
 
     private final String DELETE_QUESTION_MENU = """
-            ======DELETE QUESTION======
+            \n======DELETE QUESTION======
              (to return, enter “menu”)
             """;
 
-    private final String LIST_QUESTIONS = "======LIST QUESTION======";
+    private final String LIST_QUESTIONS = "\n======LIST QUESTION======";
 
-    private final String EXIT = "======EXIT======";
+    private final String EXIT = "\n======EXIT======";
 
 
     private record ParserCommandCli(CommandsCli command, boolean successful, String errorMessage) {
@@ -68,7 +68,7 @@ public class InterviewQuestionCli {
     private ParserCommandCli parseCommand(Scanner scanner) {
         System.out.println("Enter command:");
         try {
-            String input = scanner.nextLine().trim().toLowerCase();
+            String input = scanner.nextLine().trim().toUpperCase();
             CommandsCli command = CommandsCli.valueOf(input);
             return new ParserCommandCli(command, true, null);
         } catch (IllegalArgumentException e) {
