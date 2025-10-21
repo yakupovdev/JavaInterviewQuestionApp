@@ -5,6 +5,7 @@ import com.github.yakupovdev.javainterviewapp.model.InterviewQuestion;
 import java.util.List;
 
 public interface IQuestionDao {
-    void addQuestion(InterviewQuestion interviewQuestion);
+    void createQuestion(InterviewQuestion interviewQuestion);
+    void deleteQuestion(int id);
     List<InterviewQuestion> getQuestions();
 }
