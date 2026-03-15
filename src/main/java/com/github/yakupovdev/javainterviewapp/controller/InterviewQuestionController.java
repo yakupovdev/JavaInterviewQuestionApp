@@ -2,9 +2,11 @@ package com.github.yakupovdev.javainterviewapp.controller;
 
 import com.github.yakupovdev.javainterviewapp.dto.InterviewQuestionDto;
 import com.github.yakupovdev.javainterviewapp.service.InterviewQuestionService;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class InterviewQuestionController {
     private final InterviewQuestionService service;
 

@@ -2,10 +2,12 @@ package com.github.yakupovdev.javainterviewapp.cli;
 
 import com.github.yakupovdev.javainterviewapp.controller.InterviewQuestionController;
 import com.github.yakupovdev.javainterviewapp.dto.InterviewQuestionDto;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Scanner;
 
+@Component
 public class InterviewQuestionCli {
     private final InterviewQuestionController controller;
 

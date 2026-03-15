@@ -3,9 +3,11 @@ package com.github.yakupovdev.javainterviewapp.service;
 import com.github.yakupovdev.javainterviewapp.dao.inmemory.InMemoryQuestionDaoImpl;
 import com.github.yakupovdev.javainterviewapp.dto.InterviewQuestionDto;
 import com.github.yakupovdev.javainterviewapp.service.mapper.InterviewQuestionMapper;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class InterviewQuestionService {
 
     private final InMemoryQuestionDaoImpl storage;

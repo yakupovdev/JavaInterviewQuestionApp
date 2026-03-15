@@ -2,7 +2,9 @@ package com.github.yakupovdev.javainterviewapp.service.mapper;
 
 import com.github.yakupovdev.javainterviewapp.dto.InterviewQuestionDto;
 import com.github.yakupovdev.javainterviewapp.model.InterviewQuestion;
+import org.springframework.stereotype.Service;
 
+@Service
 public class InterviewQuestionMapper {
     public InterviewQuestion toInterviewQuestion(InterviewQuestionDto interviewQuestionDto) {
         return new InterviewQuestion(interviewQuestionDto.getId(),
