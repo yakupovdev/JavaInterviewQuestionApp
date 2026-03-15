@@ -2,11 +2,13 @@ package com.github.yakupovdev.javainterviewapp.dao.inmemory;
 
 import com.github.yakupovdev.javainterviewapp.dao.IQuestionDao;
 import com.github.yakupovdev.javainterviewapp.model.InterviewQuestion;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
 
+@Component
 public class InMemoryQuestionDaoImpl implements IQuestionDao {
     private final AtomicInteger lastId;
     private final List<InterviewQuestion> questions;
